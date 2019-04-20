@@ -1,5 +1,8 @@
 import Taro, { Component } from '@tarojs/taro'
+import { Provider } from '@tarojs/redux'
+
 import Index from './pages/index'
+import store from './store/store'
 
 import './app.css'
 
@@ -13,6 +16,8 @@ class App extends Component {
 
   config = {
     pages: [
+      'pages/my/index',
+      'pages/add/index',
       'pages/index/index'
     ],
     window: {
@@ -35,7 +40,9 @@ class App extends Component {
   // 请勿修改此函数
   render () {
     return (
+      <Provider store={store}>
       <Index />
+      </Provider>
     )
   }
 }

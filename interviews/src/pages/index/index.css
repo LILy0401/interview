@@ -1,0 +1,40 @@
+
+.index{
+    width: 100%;
+    height: 100%;
+    background: #eee;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.map{
+    width: 100%;
+    height: 100%;
+    flex: 1;
+    overflow: hidden;
+   
+}
+.text{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    background: #000;
+    color: #fff;
+}
+.locations{
+    position: absolute;
+    bottom: 120px;
+    left: 20px;
+    width: 70px;
+    height: 70px;
+}
+.my{
+    position: absolute;
+    bottom: 120px;
+    right: 25px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #333;
+}
